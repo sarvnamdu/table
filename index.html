@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>II CSE Timetable</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+            margin: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: #fff;
+        }
+        th, td {
+            border: 1px solid #000;
+            padding: 10px;
+            text-align: center;
+font-weight: bold;
+    font-family: 'Poppins', Arial, sans-serif; /* Clear font */
+    font-size: 20px; /* Bigger text for readability */
+        }
+        th {
+            background-color: #007bff;
+            color: white;
+        }
+	.os { background-color: #ffcccc; }
+        .dbms { background-color: #ccffcc; }
+        .aiml { background-color: #ccccff; }
+        .toc { background-color: #ffffcc; }
+        .alg { background-color: #ffaa33;}
+        .lab { background-color: #ff9999; }
+        .library { background-color: #e0e0e0; 
+writing-mode: vertical-lr; /* Vertical text from left to right */
+    text-align: center;}
+	.nm { background-color: lime; }
+	.break { background-color: tan; 
+writing-mode: vertical-lr; /* Vertical text from left to right */
+    text-align: center;
+}
+.alglab { background-color: #ffeed9;}
+.oslab{ background-color: #ffeeee;}
+.dbmslab { background-color: #e6ffe6;}
+.aimllab { background-color: #e6e6ff; }
+.lunch {
+    background-color: #fffacd; /* Light Yellow */
+    writing-mode: vertical-lr; /* Vertical text from left to right */
+    text-align: center;
+
+}
+
+.ge{ background-color:#e6ccff; } /* Soft Baby Pink */
+.day { background-color: #d9f2ff;} /* Light Lemon Yellow */
+    </style>
+</head>
+<body>
+    <h2>II CSE Timetable (Even Semester 2024 - 2025)</h2>
+    <table>
+        <tr>
+            <th>Day/Time</th>
+            <th>9:00 - 9:50</th>
+            <th>9:50 - 10:40</th>
+            <th>Break</th>
+            <th>11:00 - 11:50</th>
+            <th>11:50 - 12:40</th>
+            <th>Lunch</th>
+            <th>1:30 - 2:20</th>
+            <th>2:30 - 3:10</th>
+            <th>Break</th>
+            <th>3:20 - 4:10</th>
+            <th>4:10 - 5:00</th>
+        </tr>
+        <tr>
+            <td class="day">Monday</td>
+            <td class="os">CS3451 - OS</td>
+            <td class="dbms">CS3492 - DBMS</td>
+            <td rowspan="6" class="break"> B r e a k</td>
+            <td class="toc">CS3452 - ToC</td>
+            <td class="alg">CS3401 - Algorithms</td>
+            <td class="lunch"rowspan="6">L u n c h</td>
+            <td class="oslab"colspan="2">CS3461 OS Lab</td>
+            <td class="break"rowspan="6">B r e a k</td>
+            <td class="oslab">CS3461 OS Lab</td>
+	    <td class="library"rowspan="11">L i b r a r y</td>
+        </tr>
+        <tr>
+            <td class="day">Tuesday</td>
+            <td class="nm">NM</td>
+            <td class="nm">NM</td>
+	    <td class="nm">NM</td>
+	    <td class="nm">NM</td>
+            <td class="ge">GE3451</td>
+            <td class="dbms">CS3492 - DBMS</td>
+            <td class="aiml">CS3491 - AIML</td>
+        </tr>
+        <tr>
+            <td class="day">Wednesday</td>
+            <td class="alg">CS3401 - Algorithms</td>
+            <td class="aiml">CS3491 - AIML</td>
+            <td class="os">CS3451 - OS</td>
+            <td class="ge">GE3451</td>
+            <td class="dbmslab" colspan="2">CS3481 DBMS Lab</td>
+            <td class="dbmslab">CS3481 DBMS Lab</td>
+        </tr>
+        <tr>
+            <td class="day">Thursday</td>
+            <td class="toc">CS3452 - ToC</td>
+            <td class="os">CS3451 - OS</td>
+            <td class="dbms">CS3492 - DBMS</td>
+            <td class="ge">GE3451</td>
+            <td class="alg">CS3401 - Algorithms</td>
+            <td class="alglab">CS3401 - Alg Lab</td>
+            <td class="toc">CS3452 - ToC</td>
+        </tr>
+        <tr>
+            <td class="day">Friday</td>
+            <td class="aiml">CS3491 - AIML</td>
+            <td class="toc">CS3452 - ToC</td>
+            <td class="alg">CS3401 - Algorithms</td>
+            <td class="dbms">CS3492 - DBMS</td>
+            <td class="os">CS3451 - OS</td>
+            <td class="aimllab">CS3491 AIML Lab</td>
+            <td class="aimllab">CS3491 AIML Lab</td>
+        </tr>
+    </table>
+</body>
+</html>
