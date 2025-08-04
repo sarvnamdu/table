@@ -1,129 +1,211 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>II CSE Timetable</title>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>III CSE Timetable</title>
+  <style>
+    body {
+      font-family: 'Poppins', Arial, sans-serif;
+      text-align: center;
+      background: linear-gradient(to right, #e0eafc, #cfdef3);
+      margin: 0;
+      padding: 20px;
+    }
+
+    h2 {
+      color: #003366;
+      margin-bottom: 20px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background-color: #ffffffc7;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+     
+
+    }
+
+    th, td {
+      border: 1px solid #000;
+      padding: 10px;
+      text-align: center;
+      font-weight: bold;
+      font-size: 18px;
+      color: #0a0909b1;
+    }
+
+    th {
+      background: linear-gradient(to right, #667eea, #764ba2);
+      color: white;
+    }
+
+    /* Gradient subject styles */
+      .ccs { background: linear-gradient(to right, #ffecd2, #fcb69f);  }
+.cn     { background: linear-gradient(to right, #89f7fe, #66a6ff); }  
+.cnlab     { background: linear-gradient(to right, #89f7fe, #66a6ff); }     /* Computer Networks */
+.cd     { background: linear-gradient(to right, #ff9a9e, #fad0c4); }     /* Compiler Design */
+.cs    { background: linear-gradient(to right, #f6d365, #fda085); }     /* Cryptography & Cyber Security */
+.dc     { background: linear-gradient(to right, #e0c3fc, #a109ff); }     /* Distributed Computing */
+.drrm   { background: linear-gradient(to right, #e0eafc, #cfdef3); }     /* DRR & M */
+.cc     { background: linear-gradient(to right, #fbc2eb, #a6c1ee); }     /* Cloud Computing */
+.tsa    { background: linear-gradient(to right, #a1c4fd, #097a4d); }     /* Text & Speech Analysis */
+.honors1{ background: linear-gradient(to right, #fddb92, #d1fdff); }     /* Principles of Prog Lang */
+.honors2{ background: linear-gradient(to right, #a18cd1, #fbc2eb); }     /* Digital Marketing */
+.minor1 { background: linear-gradient(to right, #d4fc79, #96e6a1); }     /* HRM */
+.minor2 { background: linear-gradient(to right, #ffecd2, #fcb69f); }     /* Financing Business */
+.naan   { background: linear-gradient(to right, #fddb92, #d1fdff); }     /* NAAN Mudhalvan */
+.ppl    { background: linear-gradient(to right, #fddb92, #d1fdff); }     /* Placement */
+.tsalab { background: linear-gradient(to right, #c2ffd8, #097a4d); color: #000000; }
+.cclab     { background: linear-gradient(to right, #fbc2eb, #a6c1ee); }
+.cdlab  { background: linear-gradient(to right, #ffd3a5, #fd6585); }
+
+.lunch  { background: linear-gradient(to bottom, #fffbd5, #b20a2c); writing-mode: vertical-lr; color: rgb(0, 0, 0); }
+.break  { background: linear-gradient(to bottom, #fdfbfb, #ebedee); writing-mode: vertical-lr; color: #333; }
+.day    { background: linear-gradient(to right, #09b99c, #09b99c); color: white; }
+.place    { background: linear-gradient(to right, #09b99c, #09b99c); color: white; }
+  </style>
+</head>
+<body>
+
+<!-- Wrap entire content to capture as image -->
+<div id="timetable-content">
+
+  <h2>III CSE Timetable</h2><br>
+  <table align="center">
+    <tr>
+      <th>Day/Time</th>
+      <th>9:00 - 09:50</th>
+      <th>09:50 - 10:40</th>
+      <th>10:40 - 11:00</th>
+      <th>11:00 - 11:50</th>
+      <th>11:50 - 12:40</th>
+      <th>12:40 - 1:30</th>
+      <th>1:30 - 2:20</th>
+      <th>2:30 - 3:10</th>
+      <th>3:10 - 3:20</th>
+      <th>3:20 - 4:10</th>
+      <th>4:10 - 5:00</th>
+    </tr>
+    <tr>
+      <td class="day">Monday</td>
+      <td class="cd">CD/NM</td>
+      <td class="tsa">TSA/NM</td>
+      <td rowspan="7" class="break">Break</td>
+      <td class="cc">CC/NM</td>
+      <td class="cn">CN/NM</td>
+      <td class="lunch" rowspan="6">Lunch</td>
+      <td class="tsalab" colspan="2">TSA LAB</td>
+      <td rowspan="7" class="break">Break</td>
+      <td class="cdlab" colspan="2">DM LAB/HRME</td>
+    </tr>
+    <tr>
+      <td class="day">Tuesday</td>
+      <td class="ccs">C & CS</td>
+      <td class="dc">DC</td>
+      <td class="cd">CD</td>
+      <td class="drrm">DRR & M</td>
+      <td class="cnlab" colspan="2">CN LAB</td>
+      <td class="ppl">PPL/FNBV</td>
+      <td class="dm">DM/HRME</td>
+    </tr>
+    <tr>
+      <td class="day">Wednesday</td>
+      <td class="tsa">TSA</td>
+      <td class="ccs">C & CS</td>
+      <td class="cn">CN</td>
+      <td class="drrm">DRR & M</td>
+      <td class="cclab" colspan="2">CC LAB</td>
+      <td class="ppl">PPL/FNBV</td>
+      <td class="dm">DM/HRME</td>
+    </tr>
+    <tr>
+      <td class="day">Thursday</td>
+      <td class="cc">CC</td>
+      <td class="cd">CD</td>
+      <td class="dc">DC</td>
+      <td class="cn">CN</td>
+      <td class="cdlab" colspan="2">CD LAB</td>
+      <td class="drrm">DRR & M</td>
+      <td class="ppl">PPL</td>
+    </tr>
+    <tr>
+      <td class="day">Friday</td>
+      <td class="cn">CN</td>
+      <td class="cd">CD</td>
+      <td class="ccs">C & CS</td>
+      <td class="dc">DC</td>
+      <td class="tsa">TSA</td>
+      <td class="cclab">CC</td>
+      <td class="cdlab">CD</td>
+      <td class="place">PLACEMENT</td>
+    </tr>
+  </table>
+
+  <br><br>
+  <h2 style="color:#003366;">Course Details – III CSE</h2>
+  <table align="center" style="width: 100%; border-collapse: collapse; background-color: #ffffffcc; font-size: 18px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+    <thead>
+      <tr style="background: linear-gradient(to right, #667eea, #764ba2); color: white;">
+        <th style="padding: 10px; border: 1px solid #000;">SL. NO</th>
+        <th style="padding: 10px; border: 1px solid #000;">COURSE CODE</th>
+        <th style="padding: 10px; border: 1px solid #000;">COURSE TITLE</th>
+        <th style="padding: 10px; border: 1px solid #000;">NAME OF THE FACULTY</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="cn"><td>1</td><td>CS3591</td><td>Computer Networks (CN) <strong>(T+P)</strong></td><td>Dr. M. Vinoth Kumar</td></tr>
+      <tr class="cd"><td>2</td><td>CS3501</td><td>Compiler Design (CD) <strong>(T+P)</strong></td><td>Dr. V. Sasikala</td></tr>
+      <tr class="ccs"><td>3</td><td>CB3491</td><td>Cryptography and Cyber Security (C&amp;CS)</td><td>Mr. KR. Karthick</td></tr>
+      <tr class="dc"><td>4</td><td>CS3551</td><td>Distributed Computing (DC)</td><td>Dr. S.C. Raj Kumar</td></tr>
+      <tr class="drrm"><td>5</td><td>MX3084</td><td>Disaster Risk Reduction and Management (DRR&amp;M) – <strong>Mandatory Course</strong></td><td>Mr. KR. Karthick</td></tr>
+      <tr class="cc"><td>6</td><td>CCS335</td><td>Cloud Computing (CC) <strong>(PE I – T+P)</strong></td><td>Dr. P. Uma Maheswari</td></tr>
+      <tr class="tsa"><td>7</td><td>CCS369</td><td>Text and Speech Analysis (T&amp;SA) <strong>(PE II – T+P)</strong></td><td>Dr. A. Muthumari</td></tr>
+      <tr class="honors1"><td>8</td><td>CCS358</td><td>Principles of Programming Languages – <strong>Honors</strong></td><td>Mr. S. Karthick Perumal</td></tr>
+      <tr class="honors2"><td>9</td><td>CCW332</td><td>Digital Marketing – <strong>Honors</strong></td><td>Mr. S. Karthick Perumal</td></tr>
+      <tr class="minor1"><td>10</td><td>CMG341</td><td>Human Resource Management for Entrepreneurs – <strong>Minor</strong></td><td>Dr. S.C. Raj Kumar</td></tr>
+      <tr class="minor2"><td>11</td><td>CMG342</td><td>Financing New Business Ventures – <strong>Minor</strong></td><td>Mr. KR. Karthick</td></tr>
+      <tr class="naan"><td>12</td><td></td><td>Front End Technologies – <strong>NAAN MUDHALVAN</strong></td><td>Dr. M. Vinoth Kumar</td></tr>
+    </tbody>
+  </table>
+</div> <!-- END OF timetable-content -->
+
+<!-- Extra gradient styles for rows -->
 <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            background-color: #f4f4f4;
-            margin: 20px;
-        }
-        table {
-		
-            width: 100%;
-            border-collapse: collapse;
-            background-color: #fff;
-        }
-        th, td {
-            border: 1px solid #000;
-            padding: 10px;
-            text-align: center;
-font-weight: bold;
-    font-family: 'Poppins', Arial, sans-serif; /* Clear font */
-    font-size: 20px; /* Bigger text for readability */
-        }
-        th {
-            background-color: #007bff;
-            color: white;
-        }
-	.os { background-color: #ffcccc; }
-        .dbms { background-color: #ccffcc; }
-        .aiml { background-color: #ccccff; }
-        .toc { background-color: #ffffcc; }
-        .alg { background-color: #ffaa33;}
-        .lab { background-color: #ff9999; }
-        .library { background-color: #e0e0e0; 
-writing-mode: vertical-lr; /* Vertical text from left to right */
-    text-align: center;}
-	.nm { background-color: lime; }
-	.break { background-color: tan; 
-writing-mode: vertical-lr; /* Vertical text from left to right */
-    text-align: center;
-}
-.alglab { background-color: #ffeed9;}
-.oslab{ background-color: #ffeeee;}
-.dbmslab { background-color: #e6ffe6;}
-.aimllab { background-color: #e6e6ff; }
-.lunch {
-    background-color: #fffacd; /* Light Yellow */
-    writing-mode: vertical-lr; /* Vertical text from left to right */
-    text-align: center;
-
-}
-
-.ge{ background-color:#e6ccff; } /* Soft Baby Pink */
-.day { background-color: #d9f2ff;} /* Light Lemon Yellow */
+  .ccs { background: linear-gradient(to right, #ffecd2, #fcb69f); }
+  .honors1 { background: linear-gradient(to right, #f6d365, #fda085); }
+  .honors2 { background: linear-gradient(to right, #a18cd1, #fbc2eb); }
+  .minor1 { background: linear-gradient(to right, #d4fc79, #96e6a1); }
+  .minor2 { background: linear-gradient(to right, #ffecd2, #fcb69f); }
+  .naan   { background: linear-gradient(to right, #fddb92, #d1fdff); }
 </style>
-  </head>
-  <body>
-    <h2>II CSE Timetable</h2><br>
-    <table align="center">
-	  <tr>
-		<th>Day/Time</th>
-		<th>9:10 - 10:00</th>
-		<th>10:00 - 10:50</th>
-		<th>10:50  - 11:10</th>
-		<th>11:10 - 12:00</th>
-		<th>12:00 - 12:50</th>
-		<th>12:50 - 1:50</th>
-		<th>1:50 - 2:40</th>
-		<th>2:40 - 3:30</th>
-		<th>3:30 - 3:40</th>
-		<th>3:40 - 4:30</th>
-	  </tr>
-	  <tr>
-		<td class="day">Monday</td>
-		<td class="os">CS3451 - OS</td>
-		<td class="dbms">CS3492 - DBMS</td>
-		<td rowspan="6" class="break"> B r e a k</td>
-		<td class="toc">CS3452 - ToC</td>
-		<td class="alg">CS3401 - Algorithms</td>
-		<td class="lunch"rowspan="6">L u n c h</td>
-		<td class="oslab"colspan="2">CS3461 OS Lab</td>
-		<td class="break"rowspan="6">B r e a k</td>
-		<td class="oslab">CS3461 OS Lab</td>
-	  </tr>
-	  <tr>
-		<td class="day">Tuesday</td>
-		<td class="nm">NM</td>
-		<td class="nm">NM</td>
-	    <td class="nm">NM</td>
-	    <td class="nm">NM</td>
-		<td class="ge">GE3451</td>
-		<td class="dbms">CS3492 - DBMS</td>
-		<td class="aiml">CS3491 - AIML</td>
-	  </tr>
-	  <tr>
-		<td class="day">Wednesday</td>
-		<td class="alg">CS3401 - Algorithms</td>
-		<td class="aiml">CS3491 - AIML</td>
-		<td class="os">CS3451 - OS</td>
-		<td class="ge">GE3451</td>
-		<td class="dbmslab" colspan="2">CS3481 DBMS Lab</td>
-		<td class="dbmslab">CS3481 DBMS Lab</td>
-	  </tr>
-	  <tr>
-		<td class="day">Thursday</td>
-		<td class="toc">CS3452 - ToC</td>
-		<td class="os">CS3451 - OS</td>
-		<td class="dbms">CS3492 - DBMS</td>
-		<td class="ge">GE3451</td>
-		<td class="alglab" colspan="2">CS3401 - Alg Lab</td>
-		<td class="toc">CS3452 - ToC</td>
-	  </tr>
-	  <tr>
-		<td class="day">Friday</td>
-		<td class="aiml">CS3491 - AIML</td>
-		<td class="toc">CS3452 - ToC</td>
-		<td class="alg">CS3401 - Algorithms</td>
-		<td class="dbms">CS3492 - DBMS</td>
-		<td class="os">CS3451 - OS</td>
-		<td class="aimllab">CS3491 AIML Lab</td>
-		<td class="aimllab">CS3491 AIML Lab</td>
-	  </tr>
-    </table>
-  </body>
+
+<!-- Download as Image Button -->
+<br><br>
+<div style="text-align: center;">
+  <button onclick="downloadImage()" style="padding: 10px 20px; font-size: 16px; background: linear-gradient(to right, #43cea2, #185a9d); color: white; border: none; border-radius: 5px; cursor: pointer;">
+    Download Timetable as Image
+  </button>
+</div>
+
+<!-- Load html2canvas -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script>
+  function downloadImage() {
+    const target = document.getElementById('timetable-content');
+    html2canvas(target, {
+      scale: 3,
+      useCORS: true,
+      scrollY: -window.scrollY
+    }).then(canvas => {
+      const link = document.createElement('a');
+      link.download = 'III_CSE_Timetable.png';
+      link.href = canvas.toDataURL();
+      link.click();
+    });
+  }
+</script>
+
+</body>
 </html>
